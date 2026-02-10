@@ -86,6 +86,8 @@ If you want the conceptual framing behind the code:
 These documents describe *why* the kernel exists.
 The rest of the repository shows *how* it is applied.
 
+- [Super General Intelligence — Wisdom-Guided Generality](docs/philosophy/super_general_intelligence.html)
+
 ## Roadmap (near-term)
 - population registry + diversity archive
 - automatic clustering of failure signatures
