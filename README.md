@@ -79,6 +79,14 @@ That’s the difference between intelligence and wisdom.
 
 This kernel is grounded in a specific view of intelligence and superintelligence.
 
+## Roadmap (near-term)
+- population registry + diversity archive
+- automatic clustering of failure signatures
+- adversarial graders + rubric-gaming detectors
+- optional MongoDB store for shared multi-machine memory
+
+---
+
 If you want the conceptual framing behind the code:
 - [Artificial Super Intelligence — Manifesto of Industrialized Wisdom](docs/philosophy/artificial_super_intelligence.html)
 - [Universal Laws of Intelligence](docs/philosophy/universal_laws_of_intelligence.html)
@@ -87,14 +95,15 @@ These documents describe *why* the kernel exists.
 The rest of the repository shows *how* it is applied.
 
 - [Super General Intelligence — Wisdom-Guided Generality](docs/philosophy/super_general_intelligence.html)
+## Anticipated Questions & Critiques
 
-## Roadmap (near-term)
-- population registry + diversity archive
-- automatic clustering of failure signatures
-- adversarial graders + rubric-gaming detectors
-- optional MongoDB store for shared multi-machine memory
+This project includes a living document that anticipates common objections
+and responds to them directly:
 
----
+- [Expected Criticisms, Responses, and Counter-Questions](docs/philosophy/expected_criticisms.html)
+
+The goal is not to avoid critique, but to raise its quality.
+
 
 ## License
 MIT
