@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Agent State",
+  "type": "object",
+  "required": [
+    "agent_name",
+    "role",
+    "heuristics",
+    "guardrails",
+    "known_failure_signatures"
+  ],
+  "properties": {
+    "agent_name": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string"
+    },
+    "heuristics": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "guardrails": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "known_failure_signatures": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "confidence_calibration": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    }
+  }
+}

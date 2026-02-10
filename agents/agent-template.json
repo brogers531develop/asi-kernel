@@ -1,0 +1,9 @@
+{
+  "agent_name": "template",
+  "role": "explorer",
+  "heuristics": [],
+  "guardrails": [],
+  "known_failure_signatures": [],
+  "confidence_calibration": "unknown",
+  "notes": "This agent has not yet learned pain"
+}

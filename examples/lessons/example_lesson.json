@@ -1,0 +1,23 @@
+{
+  "failure_mode": "UNTESTABLE_CLAIM",
+  "trigger": {
+    "pattern": "mechanism_without_experiments",
+    "task_constraint": "must_include_experiments"
+  },
+  "outcome": {
+    "harm": "false_confidence",
+    "symptom": "high clarity, low testability"
+  },
+  "avoidance_rule": {
+    "name": "Require experiments for mechanisms",
+    "if": {
+      "claim_type": "mechanism",
+      "experiments_count": 0
+    },
+    "then": {
+      "action": "block",
+      "message": "Add \u22652 falsifiable experiments (with controls) or mark as speculation."
+    }
+  },
+  "notes": "Elegant narratives are dangerous when untestable."
+}

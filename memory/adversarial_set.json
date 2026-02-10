@@ -1,0 +1,69 @@
+{
+  "version": "0.1",
+  "description": "Convincing-wrong exemplars that train anti-deception senses",
+  "examples": [
+    {
+      "id": "adv-7f43380a-1770718274352",
+      "ts": "2026-02-10T10:11:14.352298Z",
+      "pattern": "CONFIDENCE_STACKING",
+      "example": {
+        "snippet": "This is definitively caused by X via Y, as is well-known. Therefore we can conclude...",
+        "tell": "definitively / well-known / therefore with no falsifiers"
+      },
+      "why_it_works": "It mimics academic certainty and compresses uncertainty into authoritative cadence.",
+      "how_to_catch": "Require citations or experiments; force 'what would change my mind?' and at least one alternative hypothesis.",
+      "tags": [
+        "confidence",
+        "hallucination",
+        "rhetoric"
+      ]
+    },
+    {
+      "id": "adv-def01365-1770718274352",
+      "ts": "2026-02-10T10:11:14.352313Z",
+      "pattern": "SELECTIVE_EVIDENCE",
+      "example": {
+        "snippet": "Cites only supportive findings, ignores null results and confounders.",
+        "tell": "no mention of negative controls, no confounder sweep"
+      },
+      "why_it_works": "Humans (and naive graders) reward coherence; omission is invisible unless asked for.",
+      "how_to_catch": "Add a mandatory 'confounders + disconfirming evidence' section; probe with counterfactual questions.",
+      "tags": [
+        "causality",
+        "confounding",
+        "deception"
+      ]
+    },
+    {
+      "id": "adv-00aa6623-1770718274352",
+      "ts": "2026-02-10T10:11:14.352320Z",
+      "pattern": "RUBRIC_MIRRORING",
+      "example": {
+        "snippet": "Uses all rubric keywords (assumptions, experiments, controls) but provides hollow placeholders.",
+        "tell": "lots of headings, few concrete measurements/assays"
+      },
+      "why_it_works": "Matches the evaluator's surface features while avoiding real commitments.",
+      "how_to_catch": "Enforce specificity gates (named assay, measurable outcome, timeline, control types).",
+      "tags": [
+        "rubric",
+        "gaming",
+        "shallow"
+      ]
+    },
+    {
+      "id": "adv-6efaf188-1770718274352",
+      "ts": "2026-02-10T10:11:14.352334Z",
+      "pattern": "UNFALSIFIABLE_ESCAPE_HATCH",
+      "example": {
+        "snippet": "Adds a vague experiment that cannot falsify the claim ('observe changes')",
+        "tell": "no predicted outcomes that would disconfirm"
+      },
+      "why_it_works": "Looks testable but provides no failure condition; preserves narrative.",
+      "how_to_catch": "Require explicit falsification criteria: if X not observed, claim weakens or fails.",
+      "tags": [
+        "testability",
+        "science"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "run_id": "run-0002",
+  "task_id": "bio-001",
+  "agent_name": "agent-beta",
+  "claim_type": "mechanism",
+  "answer": "Mechanism plus two experiments and controls.",
+  "metrics": {
+    "clarity": 0.8,
+    "novelty": 0.6,
+    "testability": 0.7,
+    "experiments_count": 2
+  },
+  "failed": false
+}

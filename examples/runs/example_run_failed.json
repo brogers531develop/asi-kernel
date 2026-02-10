@@ -1,0 +1,16 @@
+{
+  "run_id": "run-0001",
+  "task_id": "bio-001",
+  "agent_name": "agent-alpha",
+  "claim_type": "mechanism",
+  "answer": "Elegant mechanism described, but no experiments included.",
+  "metrics": {
+    "clarity": 0.9,
+    "novelty": 0.8,
+    "testability": 0.1,
+    "experiments_count": 0
+  },
+  "failed": true,
+  "failure_mode": "UNTESTABLE_CLAIM",
+  "reason": "Mechanism claim lacks falsifiable experiments."
+}

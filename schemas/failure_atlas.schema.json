@@ -1,0 +1,147 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Failure Atlas",
+  "type": "object",
+  "required": [
+    "version",
+    "description",
+    "failures",
+    "rules",
+    "adversarial"
+  ],
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "failures": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/failure"
+      }
+    },
+    "rules": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/rule"
+      }
+    },
+    "adversarial": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/adversarial"
+      }
+    }
+  },
+  "$defs": {
+    "failure": {
+      "type": "object",
+      "required": [
+        "id",
+        "ts",
+        "failure_mode",
+        "trigger",
+        "outcome",
+        "avoidance_rule"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "ts": {
+          "type": "string"
+        },
+        "failure_mode": {
+          "type": "string"
+        },
+        "trigger": {
+          "type": "object"
+        },
+        "outcome": {
+          "type": "object"
+        },
+        "avoidance_rule": {
+          "type": "object"
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "rule": {
+      "type": "object",
+      "required": [
+        "id",
+        "ts",
+        "name",
+        "if",
+        "then",
+        "severity"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "ts": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "if": {
+          "type": "object"
+        },
+        "then": {
+          "type": "object"
+        },
+        "severity": {
+          "type": "string",
+          "enum": [
+            "info",
+            "warn",
+            "block"
+          ]
+        }
+      }
+    },
+    "adversarial": {
+      "type": "object",
+      "required": [
+        "id",
+        "ts",
+        "pattern",
+        "example",
+        "why_it_works",
+        "how_to_catch"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "ts": {
+          "type": "string"
+        },
+        "pattern": {
+          "type": "string"
+        },
+        "example": {
+          "type": "object"
+        },
+        "why_it_works": {
+          "type": "string"
+        },
+        "how_to_catch": {
+          "type": "string"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "bio-001",
+  "title": "Mechanism proposal + testability",
+  "prompt": "Propose a biological mechanism explaining phenomenon X and include at least two falsifiable experiments.",
+  "constraints": {
+    "must_include_experiments": true,
+    "must_flag_assumptions": true
+  }
+}

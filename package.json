@@ -1,0 +1,11 @@
+{
+  "name": "asi-kernel",
+  "version": "0.1.0",
+  "type": "module",
+  "bin": {
+    "asi-kernel": "src/cli.js"
+  },
+  "scripts": {
+    "demo": "bash scripts/asi-demo.sh"
+  }
+}
