@@ -75,6 +75,16 @@ That’s the difference between intelligence and wisdom.
 - `schemas/` — JSON schemas for structured lessons
 
 ---
+## Philosophy (Optional but Foundational)
+
+This kernel is grounded in a specific view of intelligence and superintelligence.
+
+If you want the conceptual framing behind the code:
+- [Artificial Super Intelligence — Manifesto of Industrialized Wisdom](docs/philosophy/artificial_super_intelligence.html)
+- [Universal Laws of Intelligence](docs/philosophy/universal_laws_of_intelligence.html)
+
+These documents describe *why* the kernel exists.
+The rest of the repository shows *how* it is applied.
 
 ## Roadmap (near-term)
 - population registry + diversity archive
