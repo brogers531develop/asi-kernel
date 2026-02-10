@@ -88,8 +88,8 @@ This kernel is grounded in a specific view of intelligence and superintelligence
 ---
 
 If you want the conceptual framing behind the code:
-- [Artificial Super Intelligence — Manifesto of Industrialized Wisdom](docs/philosophy/Artificial Super Intelligence.html)
-- [Universal Laws of Intelligence](docs/philosophy/Universal Laws of Intelligence.html)
+- [Artificial Super Intelligence — Manifesto of Industrialized Wisdom](docs/philosophy/Artificial_Super_Intelligence.html)
+- [Universal Laws of Intelligence](docs/philosophy/Universal_Laws_of_Intelligence.html)
 
 These documents describe *why* the kernel exists.
 The rest of the repository shows *how* it is applied.
