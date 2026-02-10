@@ -8,6 +8,11 @@ This repository is not “an AGI model.”
 It is a **kernel**: a small set of rules + data structures that make any agent system
 **refuse to relearn known pain**.
 
+This project is early by design.
+It prioritizes conceptual clarity, failure modeling, and invariants over scale.
+If you are looking for a finished product, come back later.
+If you are looking for a way to think differently about ASI, start here.
+
 ## What this is
 - A minimal, opinionated framework for:
   - capturing failures as structured lessons
